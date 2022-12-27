@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>404 错误</title>
+
+<style type="text/css">
+
+*{ padding: 0; margin: 0; }
+
+html{ overflow-y: scroll; }
+
+body{ background: #fff; font-family: '微软雅黑'; color: #333; font-size: 16px; }
+
+img{ border: 0; }
+
+.error{ padding: 24px 48px; }
+
+.face{ font-size: 100px; font-weight: normal; line-height: 120px; margin-bottom: 12px; }
+
+h1{ font-size: 32px; line-height: 48px; }
+
+.error .content{ padding-top: 10px}
+
+.error .info{ margin-bottom: 12px; }
+
+.error .info .title{ margin-bottom: 3px; }
+
+.error .info .title h3{ color: #000; font-weight: 700; font-size: 16px; }
+
+.error .info .text{ line-height: 24px; }
+
+.copyright{ padding: 12px 48px; color: #999; }
+
+.copyright a{ color: #000; text-decoration: none; }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="error">
+
+<p class="face">:(</p>
+
+<h1>404 错误</h1>
+
+<div class="content">
+
+    <div class="info">
+
+        <div class="title">
+
+            <h3>INFO</h3>
+
+        </div>
+
+        <div class="text">
+
+            <p>您所访问的页面不存在或者已被删除</p>
+
+        </div>
+
+    </div>
+
+    <div class="info">
+
+        <div class="title">
+
+            <h3>SPLIT LINE</h3>
+
+        </div>
+
+<hr width="100%" align = "left" />
+
+<h5>首页: <a href="https://sfundogcdn.github.io/" target="_blank" title="">https://sfundogcdn.github.io/</a></h5>
+
+<h5>博客: <a href="https://shenfandog.github.io/" target="_blank" title="">https://shenfandog.github.io/</a></h5>
+
+<h2><div id="countdown"></div></h2>
+
+<script language="javascript" type="text/javascript">
+
+    var time = 5
+
+    var divLabel = document.getElementById("countdown")
+
+    var label = "秒后自动跳转到主页"
+
+    divLabel.innerHTML = time.toString() + label
+
+    function updateTime(){
+
+        time = time-1
+
+        if(time>=0){ divLabel.innerHTML = time.toString() + label }
+
+        else{ divLabel.innerHTML = "跳转中,请稍后..." }
+
+    }
+
+    setInterval("updateTime()",1000);
+
+    setTimeout("javascript:location.href='https://sfundogcdn.github.io/'", time*1000);
+
+</script>
+
+<a href="javascript:history.go(-1)"> 返回上一页</a>
+
+</body>
+
+</html>
