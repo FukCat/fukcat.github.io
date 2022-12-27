@@ -439,4 +439,8 @@ function click(index) {
     gameTapEvent(fakeEvent)
 }
 
-console.log("不修改，好嘛？乱传又有什么用呢？(ˉ▽ˉ；)...")
+console.log("Hello,Chicken World!(ˉ▽ˉ ).")
+console.log("鸡你太美,鸡你实在是太美🐔🏀!")
+console.log("原作者: fangkuai767")
+console.log(":)")
+console.log("这,这不对吧,你又偷看什么控制台?!!(恼")
