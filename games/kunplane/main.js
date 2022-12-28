@@ -114,7 +114,7 @@ function random(min,max){
 创建本方飞机类
  */
 function ourplan(X,Y){
-    var imagesrc="image/wdfj.gif";
+    var imagesrc="./wdfj.gif";
     plan.call(this,1,X,Y,66,80,0,660,0,"./bffjbz.gif",imagesrc);
     this.imagenode.setAttribute('id','ourplan');
 }
@@ -274,7 +274,7 @@ function start(){
         mark1++;
         //中飞机
         if(mark1%5==0){
-            enemys.push(new enemy(6,25,274,46,60,5000,360,random(1,3),".image/zfjbz.gif","./enemy3_fly_1.png"));
+            enemys.push(new enemy(6,25,274,46,60,5000,360,random(1,3),"./zfjbz.gif","./enemy3_fly_1.png"));
         }
         //大飞机
         if(mark1==20){
