@@ -96,7 +96,7 @@ function bullet(X,Y,sizeX,sizeY,imagesrc){
  创建单行子弹类
  */
 function oddbullet(X,Y){
-    bullet.call(this,X,Y,6,14,"image/bullet1.png");
+    bullet.call(this,X,Y,6,14,"./bullet1.png");
 }
 
 /*
@@ -115,7 +115,7 @@ function random(min,max){
  */
 function ourplan(X,Y){
     var imagesrc="image/wdfj.gif";
-    plan.call(this,1,X,Y,66,80,0,660,0,"image/bffjbz.gif",imagesrc);
+    plan.call(this,1,X,Y,66,80,0,660,0,"./bffjbz.gif",imagesrc);
     this.imagenode.setAttribute('id','ourplan');
 }
 
@@ -274,16 +274,16 @@ function start(){
         mark1++;
         //中飞机
         if(mark1%5==0){
-            enemys.push(new enemy(6,25,274,46,60,5000,360,random(1,3),"image/zfjbz.gif","image/enemy3_fly_1.png"));
+            enemys.push(new enemy(6,25,274,46,60,5000,360,random(1,3),".image/zfjbz.gif","./enemy3_fly_1.png"));
         }
         //大飞机
         if(mark1==20){
-            enemys.push(new enemy(12,57,210,110,164,30000,540,1,"image/dfjbz.gif","image/enemy2_fly_1.png"));
+            enemys.push(new enemy(12,57,210,110,164,30000,540,1,"./dfjbz.gif","./enemy2_fly_1.png"));
             mark1=0;
         }
         //小飞机
         else{
-            enemys.push(new enemy(1,19,286,34,24,1000,360,random(1,4),"image/xfjbz.gif","image/enemy1_fly_1.png"));
+            enemys.push(new enemy(1,19,286,34,24,1000,360,random(1,4),"./xfjbz.gif","./enemy1_fly_1.png"));
         }
         mark=0;
     }
@@ -348,7 +348,7 @@ function start(){
                 if(enemys[j].imagenode.offsetLeft+enemys[j].plansizeX>=selfplan.imagenode.offsetLeft&&enemys[j].imagenode.offsetLeft<=selfplan.imagenode.offsetLeft+selfplan.plansizeX){
                   if(enemys[j].imagenode.offsetTop+enemys[j].plansizeY>=selfplan.imagenode.offsetTop+40&&enemys[j].imagenode.offsetTop<=selfplan.imagenode.offsetTop-20+selfplan.plansizeY){
                       //碰撞本方飞机，游戏结束，统计分数
-                      selfplan.imagenode.src="image/bffjbz.gif";
+                      selfplan.imagenode.src="./bffjbz.gif";
                       enddiv.style.display="block";
                       planscore.innerHTML=scores;
                       if(document.removeEventListener){
