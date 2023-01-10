@@ -18,12 +18,9 @@ E-SPLIT:
 describe/introduce:
 This is a "CDN",all right,It's actually SFUNDOG(my)
 Another deployed one for testing github pages,welcome star!
-
-下面是可以访问的链接:
-
+This is an accessible test link!:
 <br/>
-
 https://sfundogcdn.github.io
-
 <br/>
-B站搜:MC神烦屑狗!
+I don't have a YouTube account,so if you follow me,please visit (China)bilibili,
+and search:"MC神烦屑狗"!
