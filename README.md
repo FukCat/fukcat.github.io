@@ -13,7 +13,7 @@ https://sfundogcdn.github.io
 B站搜:MC神烦屑狗!
 -SPLIT LINE-
 <br/>
-E-SPLIT:
+ENGLISH:
 <br/>
 describe/introduce:
 This is a "CDN",all right,It's actually SFUNDOG(my)
