@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Righteous';
+    src: url(../font/font-Righteous.woff2) format('woff2'),
+        url(../font/font-Righteous.ttf) format('TureType');
+}
+
+.font-mxd {
+    font-family: 'Righteous', cursive;
+}
+
+.button_submit {
+    min-width: 7em;
+    margin-top: 0em;
+    margin-right: 0.5em;
+    padding: 0.5em 2em;
+    outline: none;
+    border: 2px solid #2f3640;
+    background-color: transparent;
+    border-radius: 8em;
+    color: #576375;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 0.75em;
+    font-family: 'Righteous', cursive;
+}
+
+input[type=submit]:hover {
+    background-color: #e67e22;
+    border: 2px solid #e67e22;
+    color: white;
+}
+.button_email {
+    min-width: 7em;
+    margin-top: 0em;
+    margin-right: 0.5em;
+    padding: 0.5em 2em;
+    outline: none;
+    border: 2px solid #2f3640;
+    background-color: transparent;
+    border-radius: 8em;
+    color: #576375;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 0.75em;
+    font-family: 'Righteous', cursive;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(179, 177, 177);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+
+.column {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 响应式布局 */
+@media screen and (max-width: 600px) {
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
