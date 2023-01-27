@@ -154,7 +154,41 @@
 			video#video::-webkit-media-controls-enclosure {
 				display:none !important;
 			}
-		</style>
+</style>
+<style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            border: none;
+            outline: none;
+        }
+
+        .btn {
+            width: 80px;
+            height: 38px;
+            border-radius: 4px;
+            border: 2px solid rgba(0,0,0,0.5);
+            transition: background-color 0.15s ease-in-out;
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+        }
+
+        .btn:hover{
+            color: #fff;
+            background-color: rgba(0,0,0,0.45);
+        }
+    </style>
 </head>
 <body>
 <div id="overlay" class="overlay">
@@ -172,40 +206,10 @@
 <div class="scare">
 <a href="https://www.bilibili.com/video/BV1uT4y1P7CX/"  target="_blank"></a>
 </div>
-<script type="text/javascript">
-            const video = document.getElementById("video");
-            const overlay = document.getElementById("overlay");
-            const declineButton = document.getElementById("decline-button");
-            const acceptButton = document.getElementById("accept-button");
 
-            let hasClicked;
-
-    		window.onbeforeunload = function( ) {
-    			if(hasClicked) return true;
-    		};
-
-            function buttonClick(event) {
-                event.preventDefault();
-                if(!hasClicked) hasClicked = true;
-                overlay.classList.add("hidden");
-                video.play();
-                videoClick();
-            }
-
-            function videoClick(event) {
-                if(event) event.preventDefault();
-                // if not fullscreen
-                const { documentElement } = document;
-    			if(documentElement.requestFullscreen) documentElement.requestFullscreen();
-    			else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
-    			else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
-    			else if(documentElement.msRequestFullscreen) full.msRequestFullscreen();
-            }
-
-            acceptButton.addEventListener("click", buttonClick);
-            declineButton.addEventListener("click", buttonClick);
-            video.addEventListener("click", videoClick);
-		</script>
+<a href="https://www.bilibili.com/video/BV1uT4y1P7CX/">
+<button class="btn">Download!</button>
+</a>
 
 </body></html>
 <!-- 
