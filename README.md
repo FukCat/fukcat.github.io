@@ -1,2 +1,3 @@
 # mcsfxg.github.io
-Used to save cdn files and blog :)
+Save some static web pages :)
+Now, CDN migrates dynamically related pages on Gitee to a local host written in PHP and maps them with FRP
