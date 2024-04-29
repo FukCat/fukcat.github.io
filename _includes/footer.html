@@ -1,0 +1,40 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col  footer-col-2">
+        <table class="social-media-list">
+          <tr>
+            {% if site.github %}
+            <td>
+              <a href="https://github.com/{{ site.github }}" target="_blank"><img class="invert" src="/images/webicon-github-m.png"></h>
+            </td>
+            {% endif %}
+            {% if site.stackoverflow %}
+            <td>
+              <a href="http://stackoverflow.com/users/{{ site.stackoverflow }}/?tab=profile" target="_blank"><img class="grayscale" src="/images/webicon-stackoverflow-m.png"></a>
+            </td>
+            {% endif %}
+            {% if site.googleplus %}
+            <td>
+              <a href="https://plus.google.com/+{{ site.googleplus }}" target="_blank"><img class="grayscale" src="/images/webicon-googleplus-m.png"></a>
+            </td>
+            {% endif %}
+            {% if site.linkedin %}
+            <td>
+              <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank"><img class="grayscale" src="/images/webicon-linkedin-m.png"></a>
+            </td>
+            {% endif %}
+			<td>
+              <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img class="grayscale" src="/images/webicon-rss-m.png"></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
