@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html class="no-touch">
 <head>
         <!-- You found mehhhhh :) -->
-	<meta charset="utf-8">
+<!--	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>doge</title>
@@ -16,4 +16,20 @@
 	<img src="./cheems.jpg" alt="Cheems" width="234" height="228">
 	<hr>
 </body>
-</html>
+</html>-->
+---
+layout: default
+---
+
+<div class="home">
+
+    <a href="{{ BASE_PATH }}/all"><h1 class="page-heading">Latest posts</h1></a>
+    <ul>
+        {% for post in site.posts limit:10 %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ BASE_PATH }}/archive"><h1 class="page-heading">Browse archive</h1></a>
+
+</div>
