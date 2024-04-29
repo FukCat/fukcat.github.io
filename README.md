@@ -1,2 +1,2 @@
 # mcsfxg.github.io
-别看了qwq
+qwq
