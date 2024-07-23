@@ -50,7 +50,7 @@
                     "sha1": "7c731ace778ed7e79230b14f540c521ba4ee97aa",
                     "path": "org/lwjgl/lwjgl/lwjgl/2.9.4/lwjgl-2.9.4.jar",
                     "size": 1056258,
-                    "url": "https://cdn.jsdelivr.net/gh/fukcat/fukcat.github.io/fastrmcp/version/libs/lwjgl-2.9.4.jar"
+                    "url": "https://fukcat.github.io/fastrmcp/version/libs/lwjgl-2.9.4.jar"
                 },
                 "classifiers": {
                     "sources": {
